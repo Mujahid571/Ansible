@@ -1,0 +1,9 @@
+---
+- name: installaton apache package to remote machine
+  hosts: ubuntu
+  become: yes
+  tasks:
+  - name: installation apache2
+    apt:
+      name: apache2
+      state: present
