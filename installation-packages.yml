@@ -1,0 +1,13 @@
+---
+- name: installation of packages to rhel machine
+  hosts: rhel
+  become: yes
+  tasks:
+  - name: installation of wget package
+    yum:
+      name: wget
+      state: present
+  - name: installation of httpd package
+    yum:
+      name: httpd
+      state: present
