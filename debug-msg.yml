@@ -1,0 +1,8 @@
+---
+- name: simple print message but this line should be optional
+  hosts: rhel
+  tasks:
+    - name: print the message
+      debug:
+        msg: "Devops Engineer"
+
