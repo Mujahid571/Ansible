@@ -1,0 +1,9 @@
+---
+- hosts: rhel
+  gather_facts: no
+  tasks:
+  - name: fetch a file from rhel to ubuntu Machine
+    fetch:
+      src: /home/aadmain/file.txt
+      dest: /home/aadmain/ansible/
+      flat: yes
