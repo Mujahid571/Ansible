@@ -1,0 +1,8 @@
+---
+- hosts: rhel
+  gather_facts: no
+  tasks:
+  - name: copy a file to the rhel machine
+    copy:
+      src: /home/aadmain/ansible/file.txt
+      dest: /home/aadmain
